@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ButtonModule } from 'primeng/primeng';
 
 @Component({
     selector: 'counter',
