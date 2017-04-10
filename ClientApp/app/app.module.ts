@@ -14,7 +14,8 @@ import {
     DialogModule,
     DataTableModule,
     SharedModule,
-    InputTextModule
+    InputTextModule,
+    PanelModule
 } from 'primeng/primeng';
 
 @NgModule({
@@ -30,7 +31,7 @@ import {
     ],
     imports: [
         UniversalModule,FormsModule, ButtonModule, DialogModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
-        DataTableModule,InputTextModule,
+        DataTableModule,InputTextModule,PanelModule,
         SharedModule, RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },

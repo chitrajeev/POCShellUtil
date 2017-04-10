@@ -1,26 +1,31 @@
-<p-dialog header="Disclaimer" [style]="{'text-align':'center'}" [(visible)]="display" modal="modal" width="600" responsive="true">
-    <div style="text-align:left;">
-        <p>PLEASE READ CAREFULLY THE FOLLOWING TERMS and CONDITIONS GOVERNING YOUR COMPANY’S AND ITS PERSONNEL’S ACCESS AND USE OF
-        THIS SITE YOUR AGREEMENT IS A CONDITION FOR USING THIS SITE.<p>
-        <p>Introduction</p> 
-        <p>1. These are the general terms and conditions
-        governing access and use of this site (“the Site”) the rights in which exclusively vest in Shell International B.V.
-        and/or its licensors (collectively herein referred to as the “Owners”) . Different Shell[1] companies may use the
-        Site for their procurement processes or part thereof.</p> 
-        <p>2. By using the Site you agree to be bound by these terms and conditions without prejudice to any other terms and conditions (e.g. Bid Rules, or RFP terms) agreed with Shell.</p>
-        <p>Use of Site</p> 
-        <p>1. You warrant that you will only use the Site in accordance with these terms and conditions and in an
-        appro- priate and lawful manner. </p> 
-        <p>2. The online bidding process requires the processing of personal data (“Data”)
-        of the bidders. Shell requires the Data for the identification of the bidders (eg. name, job description, etc.) and
-        for communication purposes</p>
+<div style="padding-top:20px;">
+    <p-panel [style]="{'text-align':'center'}" width="600" responsive="true">
+        <p-header>
+            <span class="ui-panel-title" style="font-size:20px;margin-top:2px;float:left;">Disclaimer</span>
+        </p-header>
+        <div style="text-align:left;">
+            <p>PLEASE READ CAREFULLY THE FOLLOWING TERMS and CONDITIONS GOVERNING YOUR COMPANY’S AND ITS PERSONNEL’S ACCESS
+                AND USE OF THIS SITE YOUR AGREEMENT IS A CONDITION FOR USING THIS SITE.
+                <p>
+                    <p>Introduction</p>
+                    <p>1. These are the general terms and conditions governing access and use of this site (“the Site”) the
+                        rights in which exclusively vest in Shell International B.V. and/or its licensors (collectively herein
+                        referred to as the “Owners”) . Different Shell[1] companies may use the Site for their procurement
+                        processes or part thereof.</p>
+                    <p>2. By using the Site you agree to be bound by these terms and conditions without prejudice to any other
+                        terms and conditions (e.g. Bid Rules, or RFP terms) agreed with Shell.</p>
+                    <p>Use of Site</p>
+                    <p>1. You warrant that you will only use the Site in accordance with these terms and conditions and in an
+                        appro- priate and lawful manner. </p>
+                    <p>2. The online bidding process requires the processing of personal data (“Data”) of the bidders. Shell
+                        requires the Data for the identification of the bidders (eg. name, job description, etc.) and for
+                        communication purposes</p>
         </div>
-    <p-footer>
-        <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
-            <button type="button" class="ui-button-secondary" pButton (click)="display=false" label="Accept"></button>
-            <button type="button" pButton (click)="display=false" label="Decline"></button>
-        </div>
-    </p-footer>
-</p-dialog>
-
-<button type="text" (click)="showDialog()" pButton icon="fa-external-link-square" label="Show"></button>
+        <p-footer>
+            <div class="ui-helper-clearfix" >
+                <button type="button" class="ui-button-secondary" style="float:right" pButton (click)="display=false" label="Accept"></button>
+                <button type="button" class="ui-button" style="float:right" pButton (click)="display=false" label="Decline"></button>
+            </div>
+        </p-footer>
+    </p-panel>
+    <div>
