@@ -34,8 +34,8 @@ import {
         UniversalModule,FormsModule, ButtonModule, DialogModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
         DataTableModule,InputTextModule,PanelModule,DropdownModule,
         SharedModule, RouterModule.forRoot([
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
-            { path: 'home', component: HomeComponent },
+            { path: '', redirectTo: 'disclaimer', pathMatch: 'full' },
+            { path: 'home', component: DisclaimerComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'disclaimer', component: DisclaimerComponent },

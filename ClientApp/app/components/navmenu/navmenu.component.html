@@ -9,7 +9,7 @@
             </button>
             <a class='navbar-brand' [routerLink]="['/home']">
                 <span><img src="/shell.png" width="25px" height="25px" /></span>
-                <span>Shell Performance Management</span>
+                <span>Performance Management</span>
             </a>
         </div>
         <div class='clearfix'></div>
@@ -20,7 +20,7 @@
                         <span class='glyphicon glyphicon-home'></span> Home
                     </a>
                 </li>
-                <li [routerLinkActive]="['link-active']">
+                <!--<li [routerLinkActive]="['link-active']">
                     <a [routerLink]="['/counter']">
                         <span class='glyphicon glyphicon-education'></span> Counter
                     </a>
@@ -29,7 +29,7 @@
                     <a [routerLink]="['/fetch-data']">
                         <span class='glyphicon glyphicon-th-list'></span> Fetch data
                     </a>
-                </li>
+                </li>-->
                 <li [routerLinkActive]="['link-active']">
                     <a [routerLink]="['/disclaimer']">
                         <i class='fa fa-exclamation-circle fa-1x'></i> Disclaimer
@@ -37,7 +37,12 @@
                 </li>
                 <li [routerLinkActive]="['link-active']">
                     <a [routerLink]="['/submission']">
-                        <i class='fa fa-table fa-1x'></i> Submission
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i> Detailed Utilization
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/forecast-utilization-submissions']">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i> Forecast Utilization
                     </a>
                 </li>
 
