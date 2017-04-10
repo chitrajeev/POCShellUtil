@@ -9,7 +9,7 @@ li .fa {
 li.link-active a,
 li.link-active a:hover,
 li.link-active a:focus {
-    background-color: #4189C7;
+    background-color: #ff9980;
     color: white;
     
 }
@@ -60,4 +60,46 @@ li.link-active a:focus {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+}
+
+@media (min-width: 768px){
+.navbar-collapse{
+    border-top: 2px solid #ff471a;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: rgb(255, 71, 26);
+    padding: 0px;
+}}
+
+.navbar-inverse {
+    background-color: #c4cccc;
+    border-color: #080808;
+    color: blue;
+}
+
+
+a {
+    color: #174869;
+    text-decoration: none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #174869;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color:none; 
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color:none; 
+}
+.navbar-inverse .navbar-brand {
+    color: #174869;
+}
+.navbar-inverse .navbar-brand:hover {
+    color: white;
 }

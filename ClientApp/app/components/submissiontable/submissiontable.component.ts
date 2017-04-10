@@ -1,7 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { DataTableModule ,ButtonModule,DialogModule,InputTextModule } from 'primeng/primeng';
 import { ICar } from '../../domain/car';
 import { CarService } from '../../services/carservice';
+import {
+    DataTableModule,
+    ButtonModule,
+    DialogModule,
+    InputTextModule,
+    DropdownModule
+} from 'primeng/primeng';
+
 
 @Component({
     selector: 'submission',
@@ -14,20 +21,26 @@ export class SubmissionComponent implements OnInit {
     displayDialog: boolean;
 
     car: ICar = new PrimeCar("", "", "", "");
-
+    city: SelectItem[];
     selectedCar: ICar;
-
+    selectedCity: String;
     newCar: boolean;
-
     cars: ICar[];
 
-    constructor(private carService: CarService) { }
+    constructor(private carService: CarService) {
+        this.city = [];
+        this.city.push({ label: 'New York', value: 'New York' });
+        this.city.push({ label: 'Rome', value: 'Rome' });
+        this.city.push({ label: 'London', value: 'London' });
+        this.city.push({ label: 'Istanbul', value: 'Istanbul' });
+        this.city.push({ label: 'Paris', value: 'Paris' });
+    }
 
     ngOnInit() {
         this.GetData();
     }
 
-    GetData():void{
+    GetData(): void {
         this.carService.getCarsSmall().subscribe(cars => this.cars = cars);
     }
 
@@ -80,4 +93,9 @@ class PrimeCar implements ICar {
         this.brand = brand;
         this.color = color;
     }
+}
+
+export class SelectItem {
+    label: string;
+    value: string;
 }
